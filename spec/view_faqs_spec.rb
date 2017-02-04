@@ -1,5 +1,5 @@
 feature "view FAQs page" do
-  scenario "successfully" do
+  scenario "navigate to FAQs page via What we do drop down menu" do
     Capybara.app_host = "https://doctorcareanywhere.com"
 
     visit "/"
