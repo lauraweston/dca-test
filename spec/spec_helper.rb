@@ -3,7 +3,6 @@ require 'selenium-webdriver'
 
 Capybara.run_server = false
 Capybara.default_driver = :selenium
-Capybara.app_host = "https://doctorcareanywhere.com"
 
 Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)

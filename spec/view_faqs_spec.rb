@@ -1,5 +1,7 @@
 feature "view FAQs page" do
   scenario "successfully" do
+    Capybara.app_host = "https://doctorcareanywhere.com"
+
     visit "/"
     within ".header__nav" do
       find_link("What we do").hover
